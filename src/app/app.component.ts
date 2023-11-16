@@ -1,10 +1,35 @@
-import { Component } from '@angular/core';
+import { DataService } from './data.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+  mostrarOverlay = false;
+
+  inscreverS() {
+    this.mostrarOverlay = true;
+  }
+
+  fechar_inscreverS() {
+    this.mostrarOverlay = false;
+  }
+
+
   title = 'inapem';
+  mensagem!: { html: string; css: string; };
+  mensagem0!: string;
+
+  constructor(private DataService: DataService){}
+  ngOnInit(){
+    this.DataService.mensagemAtual.subscribe((mensagem) => {
+      this.mensagem = mensagem;
+    });
+    this.mensagem0 = ""
+    this.DataService.mensagemAtual0.subscribe((mensagem0) => {
+      this.mensagem0 = mensagem0;
+    });
+  }
 }
