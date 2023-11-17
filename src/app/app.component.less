@@ -37,23 +37,7 @@
 }
 
 
-.header-inapem-image{
-  background-image: url('../assets/img/constantes/save.png');
-  background-position: center;
-  background-size: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 370px;
 
-}
-
-.arrow-left{
-  width: 280px;
-  height: 480px;
-  position: absolute;
-  z-index: 99;
-  top: 20px
-}
 
 .header-caption{
   display:flex;
@@ -102,6 +86,10 @@ align-items: center;
 gap: 10px;
 }
 
+.last{
+ height: 299px;
+ flex-shrink: 0;
+}
 
 .overlay {
   position: fixed;
@@ -121,27 +109,110 @@ gap: 10px;
 width: 85%;
 }
 
-@media(max-width: 1570){
-  .arrow-left{
-    width: 260px;
-    height: 450px;
-    top: 20px
+.header-inapem-image{
+  background-image: url('../assets/img/constantes/save.png');
+  background-position: center;
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 464px;
+  flex-shrink: 0;
+}
+
+.img-geometric{
+  width: 320px;
+  height: 573px;
+  flex-shrink: 0;
+  z-index: 99;
+}
+
+.geometric{
+  position: absolute;
+  top: 4.2%;
+  left: 42%;
+}
+
+
+@media screen and (max-width: 1700px){
+  .header-inapem-image{
+    height: 400px;
+  }
+
+  .img-geometric{
+    width: 16.75rem;
+    height:30.938rem;
+    z-index: 99;
+  }
+}
+@media screen and (max-width: 1500px){
+  .header-inapem-image{
+    height: 350px;
+  }
+
+  .img-geometric{
+    width: 16.75rem;
+    height:27rem;
+    z-index: 99;
+  }
+  .geometric{
+    top: 8%;
+  }
+}
+@media screen and (max-width: 1380px){
+  .header-inapem-image{
+    height: 320px;
+  }
+
+  .img-geometric{
+    width: 16rem;
+    height:24rem;
+    z-index: 99;
+  }
+  .geometric{
+    top: 8%;
+  }
+}
+@media screen and (max-width: 1300px){
+  .header-inapem-image{
+    height: 300px;
+  }
+
+  .img-geometric{
+    width: 14rem;
+    height:23rem;
+    z-index: 99;
+  }
+  .geometric{
+    top: 9%;
+  }
+}
+@media screen and (max-width: 1110px){
+  .header-inapem-image{
+    height: 290px;
+  }
+
+  .img-geometric{
+    width: 13rem;
+    height:22rem;
+    z-index: 99;
+  }
+  .geometric{
+    top: 9%;
+  }
+}
+@media screen and (max-width: 1050px){
+  .header-inapem-image{
+    height: 270px;
+  }
+
+  .img-geometric{
+    display: none;
+  }
+  .geometric{
+    display: none;
   }
 }
 
-@media(max-width: 1540){
-  .arrow-left{
-    width: 230px;
-    height: 420px;
-    top: 20px
-  }
+.last div div{
+  margin: 1%;
 }
-
-@media(max-width: 1540){
-  .arrow-left{
-    width: 200px;
-    height: 390px;
-    top: 20px
-  }
-}
-

@@ -1,3 +1,4 @@
+<div class="gaiola" style="position: relative;">
 <nav class="navbar navbar-expand-lg navbar-light  navbar-inapem">
   <a class="navbar-brand" href="#"><img src="assets/img/constantes/logo.png" style="height: 30px;" alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -101,17 +102,15 @@
 
 
 <div class="container-fluid">
-  <div class="row header-inapem">
-      <div class="col-md-5 header-caption">
-          <div class="row d-flex justify-content-center">
+  <div class="row header-inapem" >
+      <div class="col-md-6 header-caption">
+          <div class="row d-flex justify-content-center texto" style="padding-left: 5px; padding-right: 16%">
               <div [innerHTML]="mensagem.html" class="col-md-10">
                 <P [innerHTML]="mensagem.html"></P>
               </div>
           </div>
       </div>
-      <div class="col-md-1 d-none d-lg-block">
-          <img src="assets/img/constantes/geometric.png" class="arrow-left" alt="">
-      </div>
+
       <div class="col-md-6 header-inapem-image">
 
       </div>
@@ -135,44 +134,49 @@
       </div>
   </div>
 </div>
-
+<div class="geometric" style="position: absolute; width: auto; height: auto;">
+  <img src="assets/img/constantes/geometric.png" alt="" class="img-geometric">
+</div>
+</div>
 
 <div class="overlay" *ngIf="mostrarOverlay" (click)="fechar_inscreverS()">
   <app-inscreverstartup class="inscreverS"></app-inscreverstartup>
 </div>
 
-
+<app-home></app-home>
 <router-outlet></router-outlet>
 
 
-<div class="container-fluid" style="margin-top: 8%;">
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-2 redes" >
-      <img src="assets/img/constantes/redes.png" style="width: 200px; height: 100px;">
-    </div>
-    <div class="col-md-1">
-      <h2>Help</h2>
+<div class="container-fluid last" style="margin-top: 8%;">
+  <div class="row d-flex justify-content-center" style="width: 100%; height: auto;">
+
+      <div class="col-md-3 redes">
+          <img src="assets/img/constantes/redes.png" style="width: auto; height: 100px; float: right;">
+
+      </div>
+      <div class="col-md-1">
+        <h2>Help</h2>
       <p> FAQ </p>
       <p> Customer service </p>
       <p> How to guides </p>
-    </div>
-    <div class="col-md-1">
-      <h2>Other</h2>
-      <p> Privacy Policy </p>
-      <p> Sitemap </p>
-      <p> Subscriptions </p>
-    </div>
-    <div class="col-md-1">
-      <h2>Pogram</h2>
-      <p> Nosso saber </p>
-      <p> Rede INAPEM </p>
-      <p> Feito em Angola </p>
-    </div>
-    <div class="col-md-4">
-      <h2>Contact us</h2>
-      <p> mailto:geralinapem.gov.ao </p>
-      <p> +244 937 537 383 </p>
-      <p> Largo 1º Maio, Edificio Torres Dipanda, Lado A 4º Andar, Luanda - Angola </p>
-    </div>
+      </div>
+      <div class="col-md-1">
+        <h2>Other</h2>
+        <p> Privacy Policy </p>
+        <p> Sitemap </p>
+        <p> Subscriptions </p>
+      </div>
+      <div class="col-md-1">
+        <h2>Pogram</h2>
+        <p> Nosso saber </p>
+        <p> Rede INAPEM </p>
+        <p> Feito em Angola </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Contact us</h2>
+        <p> mailto:geralinapem.gov.ao </p>
+        <p> +244 937 537 383 </p>
+        <p> Largo 1º Maio, Edificio Torres Dipanda, Lado A 4º Andar, Luanda - Angola </p>
+      </div>
   </div>
 </div>
