@@ -19,17 +19,13 @@ export class AppComponent implements OnInit{
 
 
   title = 'inapem';
-  mensagem!: { html: string; css: string; };
+  mensagem!: { html3: string; html2: string; html: string; };
   mensagem0!: string;
 
   constructor(private DataService: DataService){}
   ngOnInit(){
     this.DataService.mensagemAtual.subscribe((mensagem) => {
       this.mensagem = mensagem;
-    });
-    this.mensagem0 = ""
-    this.DataService.mensagemAtual0.subscribe((mensagem0) => {
-      this.mensagem0 = mensagem0;
     });
   }
 }

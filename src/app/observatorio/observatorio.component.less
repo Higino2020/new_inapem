@@ -9,20 +9,20 @@ gap: 10px;
 color: white;
 font-size:larger;
 border: none;
+color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 .container-fluid  .col-md-1
 {
- margin-right: -30px;
+  gap: 30px;
+  width: auto;
+  flex-shrink: 0;
 }
-
-img
-{
-  width: 60px;
-  height: 60px;
-}
-
-
 
 .row{
   margin-top: 1%;
@@ -74,24 +74,54 @@ margin-bottom: -2%;
   margin-left: 5%;
 }
 
-.image-container{
-  text-align: center;
-  width: 100%;
-}
+.image-container
+{
+height: auto;
+border-radius: 10px;
+background: #F0F2F3;
+border-radius: 10px;
+animation-timing-function: ease-out;
+animation-duration: 300ms;
+text-align: center;
+padding: 44px 14px 49.047px 13px;
 
-.image-container img{
+p{
+color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+img{
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  width: 70px;
+  height: auto;
+}
 }
 
-.col-md-2 div
-{
-width: 303px;
-height: 10%;
-height: auto;
 
-padding: 51px 64px 50px 65px;
-  border-radius: 10px;
-background: #F0F2F3;
-}
+.image-container div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  Width: auto; Height: auto;
+  }
+
+  @media screen and(max-width:1612px){
+    .image-container{
+      img{
+        width: 60px;
+      }
+      p{
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }

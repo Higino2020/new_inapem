@@ -7,16 +7,13 @@ import { DataService } from '../data.service';
   styleUrls: ['./ecossistema.component.less']
 })
 export class EcossistemaComponent {
-
-
-
-
   constructor(private dataservice: DataService){}
 
   ngOnInit() {
     const novaMensagem = {
-      html: '<h3><span">INAPEM</span>>Ecosistema e Startup</h3>',
-      css: 'color: red;'
+      html2: '<img src="assets/img/constantes/seta.png"> Ecossistema',
+      html: '',
+      html3: ''
     }
     this.dataservice.atualizaMensagem(novaMensagem);
   }

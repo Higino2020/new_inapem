@@ -11,8 +11,9 @@ export class ObservatorioComponent {
 
   ngOnInit() {
     const novaMensagem = {
-      html: '<h3><span">INAPEM</span>>Observatório</h3>',
-      css: 'color: red;'
+      html2: '<img src="assets/img/constantes/seta.png"> Observatório',
+      html: '',
+      html3: ''
     }
     this.dataservice.atualizaMensagem(novaMensagem);
   }

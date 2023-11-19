@@ -7,13 +7,13 @@ import { DataService } from '../data.service';
   styleUrls: ['./evento.component.less']
 })
 export class EventoComponent {
-  constructor(private dataservice: DataService){}
+  // constructor(private dataservice: DataService){}
 
-  ngOnInit() {
-    const novaMensagem = {
-      html: '<h3><span">INAPEM</span>>Eventos</h3>',
-      css: 'color: red;'
-    }
-    this.dataservice.atualizaMensagem(novaMensagem);
-  }
+  // ngOnInit() {
+  //   const novaMensagem = {
+  //     html: '<h3><span">INAPEM</span>>Eventos</h3>',
+  //     css: 'color: red;'
+  //   }
+  //   this.dataservice.atualizaMensagem(novaMensagem);
+  // }
 }

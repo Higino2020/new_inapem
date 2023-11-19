@@ -11,8 +11,9 @@ export class SobreComponent {
 
   ngOnInit() {
     const novaMensagem = {
-      html: '<h3><span">INAPEM</span>>Sobre</h3>',
-      css: 'color: red;'
+      html2: '<img src="assets/img/constantes/seta.png"> Sobre',
+      html: '',
+      html3: ''
     }
     this.dataservice.atualizaMensagem(novaMensagem);
   }

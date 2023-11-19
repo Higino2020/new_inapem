@@ -11,8 +11,9 @@ export class LegislacaoComponent {
 
   ngOnInit() {
     const novaMensagem = {
-      html: '<h3><span">INAPEM</span>>Legislação</h3>',
-      css: 'color: red;'
+      html2: '<img src="assets/img/constantes/seta.png"> Legislação',
+      html: '',
+      html3: ''
     }
     this.dataservice.atualizaMensagem(novaMensagem);
   }

@@ -91,7 +91,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">PT</a>
                 <a class="dropdown-item" href="#">ENG</a>
             </div>
@@ -104,9 +104,10 @@
 <div class="container-fluid">
   <div class="row header-inapem" >
       <div class="col-md-6 header-caption">
-          <div class="row d-flex justify-content-center texto" style="padding-left: 5px; padding-right: 16%">
-              <div [innerHTML]="mensagem.html" class="col-md-10">
-                <P [innerHTML]="mensagem.html"></P>
+          <div class="row d-flex justify-content-center texto" style="padding-right: 16%; margin-top: 20%; margin-left: 10%;">
+              <div  class="col-md-10">
+                <span class="inapem" [innerHTML]="mensagem.html"></span><span class="inapem" style="color: #FC8934;">INAPEN</span><span class="inapem" [innerHTML]="mensagem.html2"></span>
+                <p class="slogan" [innerHTML]="mensagem.html3"></p>
               </div>
           </div>
       </div>
@@ -118,21 +119,20 @@
 </div>
 
 <div class="numbers-details container-fluid">
-  <div class="container">
-      <div class="row">
+      <div class="row" style="width: 100%; height: 67px;">
           <ul class="list-inline d-flex justify-content-center" style="width: 100%;">
-              <li class="list-inline-item"><b>38.691 Empresas Certificadas</b></li>
-              <li class="list-inline-item"><b>32.948 Micro Empresas</b></li>
-              <li class="list-inline-item"><b>12.481 Emprendedores</b></li>
-              <li class="list-inline-item"><b>3.182 Projectos</b></li>
-              <li class="list-inline-item"><b>2.943 Pequenas Empresas</b></li>
-              <li class="list-inline-item"><b>2.943 Medias Empresas</b></li>
-              <li class="list-inline-item"><b>62 Incubadores</b></li>
-              <li class="list-inline-item"><b>108 Startups</b></li>
+              <li class="list-inline-item"><b>38.691 <span>Certificadas</span></b></li>
+              <li class="list-inline-item"><b>32.948 <span>Empresas</span></b></li>
+              <li class="list-inline-item"><b>12.481 <span>Emprendedores</span></b></li>
+              <li class="list-inline-item"><b>3.182 <span>Projectos</span></b></li>
+              <li class="list-inline-item"><b>2.943 <span>Pequenas Empresas</span></b></li>
+              <li class="list-inline-item"><b>2.943 <span>Medias Empresas</span></b></li>
+              <li class="list-inline-item"><b>62 <span>Incubadores</span></b></li>
+              <li class="list-inline-item"><b>108 <span>Startups</span></b></li>
           </ul>
 
       </div>
-  </div>
+
 </div>
 <div class="geometric" style="position: absolute; width: auto; height: auto;">
   <img src="assets/img/constantes/geometric.png" alt="" class="img-geometric">
@@ -143,7 +143,6 @@
   <app-inscreverstartup class="inscreverS"></app-inscreverstartup>
 </div>
 
-<app-home></app-home>
 <router-outlet></router-outlet>
 
 

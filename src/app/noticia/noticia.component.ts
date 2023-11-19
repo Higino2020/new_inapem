@@ -11,8 +11,9 @@ export class NoticiaComponent {
 
   ngOnInit() {
     const novaMensagem = {
-      html: '<h3><span">INAPEM</span>>Noticias</h3>',
-      css: 'color: red;'
+      html2: '<img src="assets/img/constantes/seta.png"> Notícia',
+      html: '',
+      html3: ''
     }
     this.dataservice.atualizaMensagem(novaMensagem);
   }

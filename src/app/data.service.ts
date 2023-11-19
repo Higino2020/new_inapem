@@ -8,20 +8,15 @@ import { BehaviorSubject } from "rxjs";
 
 export class DataService
 {
-  private mensagemSource = new BehaviorSubject<{html: string; css: string}>({
-    html: '<p>Ola</p>',
-    css: 'color: blue'
+  private mensagemSource = new BehaviorSubject<{html2: string; html: string; html3: string}>({
+    html: '',
+    html2:'',
+    html3: ''
   });
-  private mensagemSource0 = new BehaviorSubject<string>('');
 
-
-  mensagemAtual0 = this.mensagemSource0.asObservable();
   mensagemAtual = this.mensagemSource.asObservable();
 
-  atualizaMensagem(novaMensagem: {html: string; css: string}){
+  atualizaMensagem(novaMensagem: {html3: string; html2: string; html: string;}){
     this.mensagemSource.next(novaMensagem);
-  }
-  atualizaMensagem0(novaMensagem0: string){
-    this.mensagemSource0.next(novaMensagem0);
   }
 }

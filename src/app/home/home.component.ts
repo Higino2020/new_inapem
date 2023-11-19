@@ -12,8 +12,9 @@ constructor(private dataservice: DataService){}
 
   ngOnInit() {
     const novaMensagem = {
-      html: '<h3>Bem-vindo a <span">INAPEM</span>!</h3><p>Onde contribuimos no processo da divesificacao economica nacional e de modo ajudar no crescimento do tecido empresarial privado nacional.</p>',
-      css: 'color: red;'
+      html: 'Bem-vindo a ',
+      html2: '!',
+      html3: '<p>Onde contribuimos no processo da divesificacao economica nacional e de modo ajudar no crescimento do tecido empresarial privado nacional.</p>'
     }
     this.dataservice.atualizaMensagem(novaMensagem);
   }
