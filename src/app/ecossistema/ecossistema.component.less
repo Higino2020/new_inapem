@@ -55,14 +55,69 @@ padding: 68px 4px 68px 5px;
   margin: 0.8%;
 }
 
+
+.numbers-details{
+  background: #F37000;
+  position: relative;
+  z-index: 9999;
+  flex-shrink: 0;
+  margin-top: 8%;
+
+  .row{
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+      background-size: 100%;
+      background-image: url('../../assets/img/ecossistema/linhas.png');
+      height: 137px;
+  }
+
+  b{
+    color: #FFF;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    span{
+      border-right: 3px solid;
+      padding-right: 10px;
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+}
+
+
+ul{
+margin-top: 2.8%;
+gap: 75px;
+vertical-align: middle;
+}
+}
+
+
+
 @media screen and(max-width: 1700px) {
+  .numbers-details{
+    .row{
+      height: 120px;
+    }
+    ul{
+      margin-top: 2.5%;
+    }
+  }
+
   .image-container div{
     gap: 15px;
     }
 
     .col-md-2 p{
       color: #000;
-    font-family: Poppins;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -83,6 +138,23 @@ padding: 68px 4px 68px 5px;
 }
 
 @media screen and(max-width: 1450px){
+  .numbers-details{
+    .row{
+      height: 95px;
+    }
+    ul{
+      margin-top: 2%;
+    }
+    b{
+  font-size: 30px;
+      span{
+        font-size: 30px;
+        border-right: 2px solid;
+      }
+  }
+  }
+
+
   .image-container div{
     gap: 10px;
     }
